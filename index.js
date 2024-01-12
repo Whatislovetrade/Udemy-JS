@@ -24,7 +24,7 @@ const personalMovieDB = {
 // eslint-disable-next-line no-unused-vars
 function rememberMyFilms () {
   for (let i = 0; i < 2; i++) {
-    const userQuestions = prompt('Один из последних просмотренных фильмов?', '')
+    const userQuestions = prompt('Один из последних просмотренных фильмов?', '').trim()
     const userQuestions2 = prompt('На сколько оцените его?', '')
 
     if (userQuestions !== null && userQuestions2 !== null && userQuestions !== '' && userQuestions2 !== '' && userQuestions.length < 50) {
